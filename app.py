@@ -94,6 +94,8 @@ fig = px.line(future_df, x="Timestamp", y="Predicted Alerts",
 
 fig.update_traces(line_color='#38BDF8', line_width=3)
 fig.add_hline(y=threshold, line_dash="dash", line_color="#EF4444", annotation_text="Critical Operational Limit")
+
+# FIXED PROPERTIES HERE:
 fig.update_layout(plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)')
 fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#1E293B')
 fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#1E293B')
